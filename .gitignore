@@ -16,6 +16,7 @@ dist
 # misc
 .DS_Store
 *.pem
+*.json
 
 # debug
 npm-debug.log*
@@ -23,6 +24,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env.local
 .env.development.local
 .env.test.local
@@ -30,3 +32,6 @@ yarn-error.log*
 
 # ESLint
 .eslintcache
+
+# Folders
+example-doordash-html

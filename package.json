@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "lint": "rome check src",
+    "start": "NODE_ENV=development ts-node src/index.ts",
     "build": "tsc -p ."
   },
   "keywords": [],
@@ -12,8 +13,16 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^15.6.1",
-    "rome": "*",
+    "@types/quoted-printable": "^1.0.0",
+    "dotenv": "^10.0.0",
+    "rome": "^10.0.4-beta",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "cheerio": "*",
+    "googleapis": "^74.2.0",
+    "js-base64": "^3.6.1",
+    "quoted-printable": "^1.0.1"
   }
 }
